@@ -1,0 +1,44 @@
+@import '~style/helpers';
+
+.header {
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 56px;
+	padding: 0;
+	background: #fff;
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+	z-index: 50;
+
+	h1 {
+		float: left;
+		margin: 0;
+		padding: 0 15px;
+		font-size: 24px;
+		line-height: 56px;
+		font-weight: bold;
+		color: rgba(0,0,0,.75);
+	}
+
+	nav {
+		float: right;
+		font-size: 16px;
+
+		a {
+			display: inline-block;
+			height: 56px;
+			line-height: 56px;
+			padding: 0 15px;
+			min-width: 50px;
+			text-align: center;
+			text-decoration: none;
+			color: rgba(0,0,0,.75);
+			will-change: background-color;
+
+			&:hover, &:active {
+				color: rgba(0,0,0,.5);
+			}
+		}
+	}
+}
